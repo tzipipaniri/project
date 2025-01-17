@@ -1,5 +1,6 @@
 body {
   direction: rtl;
+  width: 100%;
 }
 
 .header {
@@ -26,6 +27,7 @@ body {
   opacity: 0.83;
   display: flex;
   flex-direction: row;
+  padding: 2%;
 }
 .header .head .shirat-hamada {
   top: 37px;
@@ -67,7 +69,6 @@ body {
   opacity: 1;
 }
 .header .head ul li:first-child {
-  position: relative;
   border-bottom: 3px solid white;
   padding-bottom: 10px;
 }
@@ -75,16 +76,21 @@ body {
   margin-left: 20px;
 }
 
-.vertical-align {
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+}
+.container .vertical-line {
   top: 287px;
   left: 1756px;
+  align-self: flex-end;
   width: 3px;
   height: 289px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-
-.shirat-hamada2 {
+.container .text .shirat-hamada2 {
   top: 280px;
   left: 1273px;
   width: 470px;
@@ -96,8 +102,7 @@ body {
   text-shadow: 0px 3px 60px rgba(0, 0, 0, 0.5568627451);
   opacity: 1;
 }
-
-.content {
+.container .text .content {
   top: 415px;
   left: 1301px;
   width: 419px;
@@ -108,8 +113,7 @@ body {
   color: #FFFFFF;
   opacity: 1;
 }
-
-.out {
+.container .text .out {
   top: 494px;
   left: 1489px;
   width: 234px;
@@ -117,7 +121,7 @@ body {
   background: transparent url("../images/Path 765.png") 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-.out .inner {
+.container .text .out .inner {
   top: 500px;
   left: 1528px;
   width: 167px;
@@ -138,6 +142,10 @@ body {
   background: #EBD3C4 0% 0% no-repeat padding-box;
   opacity: 1;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .open .txt {
   top: 311px;
@@ -551,20 +559,20 @@ body {
     background: transparent url("../images/Group 101.png") 0% 0% no-repeat padding-box;
     opacity: 1;
   }
-  .header .shirat-hamada2 {
+  .header .container .text .shirat-hamada2 {
     top: 148px;
     left: 44px;
     width: 288px;
     height: 78px;
   }
-  .header .content {
+  .header .container .text .content {
     top: 228px;
     left: 62px;
     width: 251px;
     height: 23px;
     font: normal normal normal 18px/40px Assistant;
   }
-  .header .out {
+  .header .container .text .out {
     top: 283px;
     left: 98px;
     width: 179px;
@@ -572,7 +580,7 @@ body {
     background: transparent url("../images/Group 62.png") 0% 0% no-repeat padding-box;
     opacity: 1;
   }
-  .header .out .inner {
+  .header .container .text .out .inner {
     display: none;
   }
   .img1 {
@@ -662,6 +670,18 @@ body {
   }
   .shnatonim .images .div7, .shnatonim .images .div8, .shnatonim .images .div9, .shnatonim .images .div10 {
     display: none;
+  }
+  .shnatonim .to-all {
+    top: 2202px;
+    left: 84px;
+    width: 208px;
+    height: 38px;
+  }
+  .shnatonim .to-all div {
+    top: 2207px;
+    left: 119px;
+    width: 150px;
+    height: 23px;
   }
   .last-big-image .up {
     flex-direction: column;
